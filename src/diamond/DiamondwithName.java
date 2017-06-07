@@ -29,10 +29,10 @@ public class DiamondwithName {
             System.out.println(diamonds[i]);
         }
     }
-    public static String loop(int count, String signal) {
-        String line = "";
-        for(int i = 0; i < count; i++) {
-            line += signal;
+    public static StringBuffer loop(int count, String signal) {
+        StringBuffer line = new StringBuffer();
+        for (int i = 0; i < count; i++) {
+            line.append(signal);
         }
         return line;
     }
